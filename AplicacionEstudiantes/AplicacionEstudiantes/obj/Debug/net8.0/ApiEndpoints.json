@@ -80,5 +80,62 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "EstudiantesController",
+    "Method": "EliminarPorNombre",
+    "RelativePath": "api/Estudiantes/nombre/{nombre}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EstudiantesController",
+    "Method": "ActualizarPorNombre",
+    "RelativePath": "api/Estudiantes/nombre/{nombre}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Apellido",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Edad",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Carrera",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cuatrimestre",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

@@ -135,6 +135,92 @@
           }
         }
       }
+    },
+    "/api/Estudiantes/nombre/{nombre}": {
+      "delete": {
+        "tags": [
+          "Estudiantes"
+        ],
+        "parameters": [
+          {
+            "name": "nombre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Estudiantes"
+        ],
+        "parameters": [
+          {
+            "name": "nombre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Nombre": {
+                    "type": "string"
+                  },
+                  "Apellido": {
+                    "type": "string"
+                  },
+                  "Edad": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Carrera": {
+                    "type": "string"
+                  },
+                  "Cuatrimestre": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Nombre": {
+                  "style": "form"
+                },
+                "Apellido": {
+                  "style": "form"
+                },
+                "Edad": {
+                  "style": "form"
+                },
+                "Carrera": {
+                  "style": "form"
+                },
+                "Cuatrimestre": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
