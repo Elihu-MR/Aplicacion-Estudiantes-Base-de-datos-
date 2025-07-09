@@ -1,95 +1,151 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
-import { ActivityIndicator } from 'react-native-web';
+import { useState } from 'react';
+import {
+  ActivityIndicator,
+  Button,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
 
-const url = "https://localhost:7109/api/Estudiantes";
+const API_BASE = "https://localhost:7109/api/Estudiantes";
 
 export default function App() {
+  const [loading, setLoading] = useState(false);
+  const [output, setOutput] = useState(null);
 
-  // ---------------------------------------- Api Components ----------------------------------------
-  const [estudiantes, setEstudiantes] = useState([]);// espara consumir una vez el useEffect
-  const [loading, SetLoading] = useState (true);
-  const [error, SetError] = useState (null);
+  // ---------- FUNCIONES CRUD ----------
+  const crearEstudiante = async () => {
+    setLoading(true);
+    try {
+      const formData = new FormData();
+      formData.append("Matricula", "987654");
+      formData.append("Nombre", "Juan");
+      formData.append("Apellido", "Pérez");
+      formData.append("Edad", 20);
+      formData.append("Carrera", "TI");
+      formData.append("Cuatrimestre", "5to");
 
-  useEffect(() => {
-    axios.get(url)
-      .then( (response) => {
-        console.log("Estudiantes response: ",response);
+      const res = await axios.post(API_BASE, formData, {
+        headers: { 'Content-Type': 'multipart/form-data' }
+      });
 
-        if (response.data && response.data.items && response.data.items.length > 0) {
-          setEstudiantes(response.data);
-          SetLoading(false);
-        } else {
-          SetError('Error, No Se Cargaron Los estudiantes');
-          SetLoading(false);
-        }
-      })
-        .catch( (error) => {
-          console.log(error);
-        });
-  } ,[]);
-
-  console.log("Estudiantes Response API:",estudiantes);
-  if (loading) {
-    return (
-      <View>
-        <ActivityIndicator size='large' color='#0000ff' />
-        <Text> loading... </Text>
-      </View>
-    );
-  }
-
-  if (error) {
-    return <text> Error:{Error}</text>
-  }
-
-  // ---------------------------------------- Api Components ----------------------------------------
-  return (
-    <View style={styles.container}>
-      <text style={styles.texttitle}> Characters</text>
-      <text style={styles.texttitle}>Name - Race</text>
-
-      <FlatList style={styles.list}
-      data={characters}
-      keyExtractor={ (item) => item.id.toString() }
-      renderItem={ ({item}) => (
-        <View style={styles.container} >
-          <text style={styles.text}> {item.name} - {item.race}</text>
-        </View>
-      )
+      setOutput(res.data);
+    } catch (error) {
+      setOutput("Error al crear: " + error.message);
+    } finally {
+      setLoading(false);
     }
-      />
-      <Text> loading... </Text>
-    </View>
+  };
+
+  const obtenerTodos = async () => {
+    setLoading(true);
+    try {
+      const res = await axios.get(API_BASE);
+      setOutput(res.data);
+    } catch (error) {
+      setOutput("Error al obtener todos: " + error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const obtenerUno = async () => {
+    setLoading(true);
+    try {
+      const res = await axios.get(`${API_BASE}/Juan`);
+      setOutput(res.data);
+    } catch (error) {
+      setOutput("Error al obtener uno: " + error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const actualizarEstudiante = async () => {
+    setLoading(true);
+    try {
+      const formData = new FormData();
+      formData.append("Matricula", "987654");
+      formData.append("Nombre", "Juan");
+      formData.append("Apellido", "Actualizado");
+      formData.append("Edad", 21);
+      formData.append("Carrera", "Sistemas");
+      formData.append("Cuatrimestre", "6to");
+
+      const res = await axios.put(`${API_BASE}/Juan`, formData, {
+        headers: { 'Content-Type': 'multipart/form-data' }
+      });
+
+      setOutput(res.data);
+    } catch (error) {
+      setOutput("Error al actualizar: " + error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const eliminarEstudiante = async () => {
+    setLoading(true);
+    try {
+      const res = await axios.delete(`${API_BASE}/Juan`);
+      setOutput(res.data);
+    } catch (error) {
+      setOutput("Error al eliminar: " + error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // ---------- RENDER ----------
+  return (
+    <ScrollView contentContainerStyle={styles.container}>
+      <Text style={styles.title}>CRUD Estudiantes</Text>
+
+      <Button title="📥 Crear Estudiante" onPress={crearEstudiante} />
+      <Button title="📄 Obtener Todos" onPress={obtenerTodos} />
+      <Button title="🔍 Obtener Uno" onPress={obtenerUno} />
+      <Button title="✏️ Actualizar Estudiante" onPress={actualizarEstudiante} />
+      <Button title="🗑️ Eliminar Estudiante" onPress={eliminarEstudiante} />
+
+      {loading && (
+        <View style={{ marginTop: 20 }}>
+          <ActivityIndicator size="large" color="#0000ff" />
+          <Text>Cargando...</Text>
+        </View>
+      )}
+
+      {!loading && output && (
+        <Text style={styles.result}>
+          {typeof output === "object"
+            ? JSON.stringify(output, null, 2)
+            : output}
+        </Text>
+      )}
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    padding: 20,
+    alignItems: "center",
+    backgroundColor: "#f0f0f0",
+    gap: 10,
+    paddingBottom: 100,
   },
-  list: {
+  title: {
+    fontSize: 24,
+    marginBottom: 20,
+    fontWeight: "bold",
   },
-  text: {
-    fontSize: 20,
-    fontFamily: 'Arial',
+  result: {
+    marginTop: 20,
+    backgroundColor: "#fff",
     padding: 10,
-    backgroundColor: "rgb(36, 5, 94)",
-    margin: 5,
+    width: "100%",
     borderRadius: 5,
-    color: 'white'
+    fontFamily: "monospace",
   },
-  texttitle: {
-    fontSize: 25,
-    fontFamily: 'Arial',
-    padding: 10,
-    backgroundColor: "rgb(36, 5, 94)",
-    color: 'white',
-    width:"20%"
-  }
-}
-);
+});
