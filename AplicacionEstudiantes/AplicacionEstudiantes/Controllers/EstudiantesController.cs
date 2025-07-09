@@ -22,21 +22,19 @@ public class EstudiantesController : ControllerBase
     }
 
     
-    [HttpGet("{nombre}")]
-    public ActionResult<Estudiante> GetPorId(string nombre)
+    [HttpGet("{matricula}")]
+    public ActionResult<Estudiante> GetPorId(string matricula)
     {
-        var estudiante = _coleccion.Find(x => x.Nombre == nombre).FirstOrDefault();
+        var estudiante = _coleccion.Find(x => x.Matricula == matricula).FirstOrDefault();
         return estudiante == null ? NotFound() : Ok(estudiante);
     }
 
     [HttpPost]
     public ActionResult Crear([FromForm] EstudiantePost dto)
     {
-        if (string.IsNullOrWhiteSpace(dto.Nombre) || string.IsNullOrWhiteSpace(dto.Apellido))
-            return BadRequest("Nombre y apellido son obligatorios.");
-
         var nuevo = new Estudiante
         {
+            Matricula = dto.Matricula,
             Nombre = dto.Nombre,
             Apellido = dto.Apellido,
             Edad = dto.Edad,
@@ -50,22 +48,22 @@ public class EstudiantesController : ControllerBase
     }
 
 
-    [HttpDelete("nombre/{nombre}")]
-    public ActionResult EliminarPorNombre(string nombre)
+    [HttpDelete("{matricula}")]
+    public ActionResult EliminarPorNombre(string matricula)
     {
-        var resultado = _coleccion.DeleteOne(x => x.Nombre == nombre);
+        var resultado = _coleccion.DeleteOne(x => x.Matricula == matricula);
 
         if (resultado.DeletedCount == 0)
-            return NotFound($"No se encontró ningún estudiante con el nombre '{nombre}'.");
+            return NotFound($"No se encontró ningún estudiante con la matricula: '{matricula}'.");
 
-        return Ok(MessageResponse.GetReponse(0, $"Estudiante con nombre '{nombre}' eliminado exitosamente.", MessageType.Success));
+        return Ok(MessageResponse.GetReponse(0, $"Estudiante con la matricula: '{matricula}' eliminado exitosamente.", MessageType.Success));
     }
 
 
-    [HttpPut("nombre/{nombre}")]
-    public ActionResult ActualizarPorNombre(string nombre, [FromForm] EstudiantePost dto)
+    [HttpPut("{matricula}")]
+    public ActionResult ActualizarPorNombre(string matricula, [FromForm] EstudiantePost dto)
     {
-        var filtro = Builders<Estudiante>.Filter.Eq(x => x.Nombre, nombre);
+        var filtro = Builders<Estudiante>.Filter.Eq(x => x.Matricula, matricula);
 
         var actualizacion = Builders<Estudiante>.Update
             .Set(x => x.Apellido, dto.Apellido)
@@ -76,9 +74,9 @@ public class EstudiantesController : ControllerBase
         var resultado = _coleccion.UpdateOne(filtro, actualizacion);
 
         if (resultado.MatchedCount == 0)
-            return NotFound($"No se encontró ningún estudiante con el nombre '{nombre}'.");
+            return NotFound($"No se encontró ningún estudiante con la matricula: '{matricula}'.");
 
-        return Ok(MessageResponse.GetReponse(0, $"Estudiante con nombre '{nombre}' actualizado exitosamente.", MessageType.Success));
+        return Ok(MessageResponse.GetReponse(0, $"Estudiante con la matricula: '{matricula}' actualizado exitosamente.", MessageType.Success));
     }
 
 }

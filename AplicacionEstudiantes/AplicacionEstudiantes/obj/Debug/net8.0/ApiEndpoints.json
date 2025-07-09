@@ -28,6 +28,11 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "Matricula",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "Nombre",
         "Type": "System.String",
         "IsRequired": false
@@ -58,13 +63,13 @@
   {
     "ContainingType": "EstudiantesController",
     "Method": "GetPorId",
-    "RelativePath": "api/Estudiantes/{nombre}",
+    "RelativePath": "api/Estudiantes/{matricula}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "nombre",
+        "Name": "matricula",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -84,13 +89,13 @@
   {
     "ContainingType": "EstudiantesController",
     "Method": "EliminarPorNombre",
-    "RelativePath": "api/Estudiantes/nombre/{nombre}",
+    "RelativePath": "api/Estudiantes/{matricula}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "nombre",
+        "Name": "matricula",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -100,15 +105,20 @@
   {
     "ContainingType": "EstudiantesController",
     "Method": "ActualizarPorNombre",
-    "RelativePath": "api/Estudiantes/nombre/{nombre}",
+    "RelativePath": "api/Estudiantes/{matricula}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "nombre",
+        "Name": "matricula",
         "Type": "System.String",
         "IsRequired": true
+      },
+      {
+        "Name": "Matricula",
+        "Type": "System.String",
+        "IsRequired": false
       },
       {
         "Name": "Nombre",

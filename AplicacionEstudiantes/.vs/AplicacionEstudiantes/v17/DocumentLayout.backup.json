@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|solutionrelative:aplicacionestudiantes\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|c:\\users\\elihu\\videos\\aplicacion-estudiantes-base-de-datos-\\aplicacionestudiantes\\aplicacionestudiantes\\putmodels\\asiloput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|solutionrelative:aplicacionestudiantes\\putmodels\\asiloput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|c:\\users\\elihu\\videos\\aplicacion-estudiantes-base-de-datos-\\aplicacionestudiantes\\aplicacionestudiantes\\postmodels\\estudiantespost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|solutionrelative:aplicacionestudiantes\\postmodels\\estudiantespost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|c:\\users\\elihu\\videos\\aplicacion-estudiantes-base-de-datos-\\aplicacionestudiantes\\aplicacionestudiantes\\mongo\\connection\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|solutionrelative:aplicacionestudiantes\\mongo\\connection\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|c:\\users\\elihu\\videos\\aplicacion-estudiantes-base-de-datos-\\aplicacionestudiantes\\aplicacionestudiantes\\mongo\\models\\estudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|solutionrelative:aplicacionestudiantes\\mongo\\models\\estudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|c:\\users\\elihu\\videos\\aplicacion-estudiantes-base-de-datos-\\aplicacionestudiantes\\aplicacionestudiantes\\putmodels\\asiloput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|solutionrelative:aplicacionestudiantes\\putmodels\\asiloput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|c:\\users\\elihu\\videos\\aplicacion-estudiantes-base-de-datos-\\aplicacionestudiantes\\aplicacionestudiantes\\mongo\\connection\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|solutionrelative:aplicacionestudiantes\\mongo\\connection\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|c:\\users\\elihu\\videos\\aplicacion-estudiantes-base-de-datos-\\aplicacionestudiantes\\aplicacionestudiantes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AsiloPut.cs",
               "DocumentMoniker": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\PutModels\\AsiloPut.cs",
               "RelativeDocumentMoniker": "AplicacionEstudiantes\\PutModels\\AsiloPut.cs",
@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "AplicacionEstudiantes\\Controllers\\EstudiantesController.cs",
               "ToolTip": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\Controllers\\EstudiantesController.cs",
               "RelativeToolTip": "AplicacionEstudiantes\\Controllers\\EstudiantesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwBgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T17:23:05.583Z",
               "EditorCaption": ""
@@ -83,19 +83,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Estudiantes.cs",
               "DocumentMoniker": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\Mongo\\Models\\Estudiantes.cs",
               "RelativeDocumentMoniker": "AplicacionEstudiantes\\Mongo\\Models\\Estudiantes.cs",
               "ToolTip": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\Mongo\\Models\\Estudiantes.cs",
               "RelativeToolTip": "AplicacionEstudiantes\\Mongo\\Models\\Estudiantes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T16:55:48.765Z"
+              "WhenOpened": "2025-07-09T16:55:48.765Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MongoDbContext.cs",
               "DocumentMoniker": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\Mongo\\Connection\\MongoDbContext.cs",
               "RelativeDocumentMoniker": "AplicacionEstudiantes\\Mongo\\Connection\\MongoDbContext.cs",
@@ -107,15 +108,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "EstudiantesPost.cs",
               "DocumentMoniker": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\PostModels\\EstudiantesPost.cs",
               "RelativeDocumentMoniker": "AplicacionEstudiantes\\PostModels\\EstudiantesPost.cs",
               "ToolTip": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\PostModels\\EstudiantesPost.cs",
               "RelativeToolTip": "AplicacionEstudiantes\\PostModels\\EstudiantesPost.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T16:49:14.091Z"
+              "WhenOpened": "2025-07-09T16:49:14.091Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

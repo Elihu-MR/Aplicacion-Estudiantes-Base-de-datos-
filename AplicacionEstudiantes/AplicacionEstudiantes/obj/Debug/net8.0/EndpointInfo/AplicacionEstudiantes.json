@@ -52,6 +52,9 @@
               "schema": {
                 "type": "object",
                 "properties": {
+                  "Matricula": {
+                    "type": "string"
+                  },
                   "Nombre": {
                     "type": "string"
                   },
@@ -71,6 +74,9 @@
                 }
               },
               "encoding": {
+                "Matricula": {
+                  "style": "form"
+                },
                 "Nombre": {
                   "style": "form"
                 },
@@ -97,14 +103,14 @@
         }
       }
     },
-    "/api/Estudiantes/{nombre}": {
+    "/api/Estudiantes/{matricula}": {
       "get": {
         "tags": [
           "Estudiantes"
         ],
         "parameters": [
           {
-            "name": "nombre",
+            "name": "matricula",
             "in": "path",
             "required": true,
             "schema": {
@@ -134,16 +140,14 @@
             }
           }
         }
-      }
-    },
-    "/api/Estudiantes/nombre/{nombre}": {
+      },
       "delete": {
         "tags": [
           "Estudiantes"
         ],
         "parameters": [
           {
-            "name": "nombre",
+            "name": "matricula",
             "in": "path",
             "required": true,
             "schema": {
@@ -163,7 +167,7 @@
         ],
         "parameters": [
           {
-            "name": "nombre",
+            "name": "matricula",
             "in": "path",
             "required": true,
             "schema": {
@@ -177,6 +181,9 @@
               "schema": {
                 "type": "object",
                 "properties": {
+                  "Matricula": {
+                    "type": "string"
+                  },
                   "Nombre": {
                     "type": "string"
                   },
@@ -196,6 +203,9 @@
                 }
               },
               "encoding": {
+                "Matricula": {
+                  "style": "form"
+                },
                 "Nombre": {
                   "style": "form"
                 },
@@ -233,6 +243,10 @@
             "nullable": true
           },
           "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "matricula": {
             "type": "string",
             "nullable": true
           },

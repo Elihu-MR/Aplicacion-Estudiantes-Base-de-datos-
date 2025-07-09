@@ -6,7 +6,7 @@ db.createCollection('estudiantes')
 
 db.estudiantes.insertMany([
 {
-    matricula: "",
+    matricula: "1",
     nombre: 'Jese Santiago',
     apellido: 'Perez Salazar',
     edad: 19,
@@ -14,7 +14,7 @@ db.estudiantes.insertMany([
     cuatrimestre: '5to'
     },
     {
-        matricula: "",
+        matricula: "12",
         nombre: 'Josue Elihu',
         apellido: 'Moreno Ramirez',
         edad: 20,
@@ -24,7 +24,7 @@ db.estudiantes.insertMany([
     },
 
     {
-        matricula: "",
+        matricula: "123",
         nombre: 'Cesar Ernesto',
         apellido: 'Solis Hernandez',
         edad: 19,
@@ -32,7 +32,7 @@ db.estudiantes.insertMany([
         cuatrimestre: '3ro'
     },
     {
-        matricula: "",
+        matricula: "1234",
         nombre: 'Angel Geovanny',
         apellido: 'Gameros Garcia',
         edad: 23,
@@ -40,19 +40,19 @@ db.estudiantes.insertMany([
         cuatrimestre: '5to'
     },
     {
-        matricula: "",
+        matricula: "12345",
         nombre: 'Kerry',
         apellido: 'Garcia Cota',
         edad: 22,
         carrera: 'Desarrollo Multiplataforma En Software',
         cuatrimestre: '8vo'
     }
-
 ])
 
 # Insert ONE
 
 db.estudiantes.insertOne({
+matricula: "123456",
 nombre: 'Eric Sidrac',
 apellido: 'Alvarez Aguilar',
 edad: 25,

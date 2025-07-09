@@ -10,6 +10,9 @@ public class Estudiante
     [BsonElement("nombre")]
     public string Nombre { get; set; }
 
+    [BsonElement("matricula")]
+    public string Matricula { get; set; }
+
     [BsonElement("apellido")]
     public string Apellido { get; set; }
 
