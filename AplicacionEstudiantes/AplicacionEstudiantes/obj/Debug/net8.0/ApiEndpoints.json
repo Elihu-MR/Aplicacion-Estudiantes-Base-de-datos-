@@ -1,0 +1,84 @@
+[
+  {
+    "ContainingType": "EstudiantesController",
+    "Method": "GetTodos",
+    "RelativePath": "api/Estudiantes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Estudiante, AplicacionEstudiantes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EstudiantesController",
+    "Method": "Crear",
+    "RelativePath": "api/Estudiantes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Apellido",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Edad",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Carrera",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cuatrimestre",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EstudiantesController",
+    "Method": "GetPorId",
+    "RelativePath": "api/Estudiantes/{nombre}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Estudiante",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
