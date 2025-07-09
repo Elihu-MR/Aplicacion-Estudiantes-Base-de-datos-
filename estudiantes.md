@@ -5,15 +5,16 @@ db.createCollection('estudiantes')
 # Insert Many
 
 db.estudiantes.insertMany([
-{  
- nombre: 'Jese Santiago',
-apellido: 'Perez Salazar',
-edad: 19,
-carrera: 'Desarrollo Multiplataforma en Software',
-cuatrimestre: '5to'
-
+{
+    matricula: "",
+    nombre: 'Jese Santiago',
+    apellido: 'Perez Salazar',
+    edad: 19,
+    carrera: 'Desarrollo Multiplataforma en Software',
+    cuatrimestre: '5to'
     },
     {
+        matricula: "",
         nombre: 'Josue Elihu',
         apellido: 'Moreno Ramirez',
         edad: 20,
@@ -23,6 +24,7 @@ cuatrimestre: '5to'
     },
 
     {
+        matricula: "",
         nombre: 'Cesar Ernesto',
         apellido: 'Solis Hernandez',
         edad: 19,
@@ -30,6 +32,7 @@ cuatrimestre: '5to'
         cuatrimestre: '3ro'
     },
     {
+        matricula: "",
         nombre: 'Angel Geovanny',
         apellido: 'Gameros Garcia',
         edad: 23,
@@ -37,7 +40,7 @@ cuatrimestre: '5to'
         cuatrimestre: '5to'
     },
     {
-
+        matricula: "",
         nombre: 'Kerry',
         apellido: 'Garcia Cota',
         edad: 22,
@@ -61,8 +64,7 @@ cuatrimestre: '12vo'
 
 db.estudiantes.updateOne(
 {nombre: "Kerry"},
-{$set: {nombre: "Kerry Steven", edad: 24}}
-
+{$set: {matricula: "1"}}
 )
 
 # Update Many
