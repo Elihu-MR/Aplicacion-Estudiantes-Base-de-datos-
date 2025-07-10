@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|solutionrelative:aplicacionestudiantes\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|c:\\users\\elihu\\videos\\aplicacion-estudiantes-base-de-datos-\\aplicacionestudiantes\\aplicacionestudiantes\\postmodels\\estudiantespost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|solutionrelative:aplicacionestudiantes\\postmodels\\estudiantespost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|c:\\users\\elihu\\videos\\aplicacion-estudiantes-base-de-datos-\\aplicacionestudiantes\\aplicacionestudiantes\\mongo\\models\\estudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|solutionrelative:aplicacionestudiantes\\mongo\\models\\estudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|c:\\users\\elihu\\videos\\aplicacion-estudiantes-base-de-datos-\\aplicacionestudiantes\\aplicacionestudiantes\\postmodels\\estudiantespost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|solutionrelative:aplicacionestudiantes\\postmodels\\estudiantespost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7DC87E1-1ED5-41BD-B790-F2C86B9C8D26}|AplicacionEstudiantes\\AplicacionEstudiantes.csproj|c:\\users\\elihu\\videos\\aplicacion-estudiantes-base-de-datos-\\aplicacionestudiantes\\aplicacionestudiantes\\putmodels\\asiloput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,23 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AsiloPut.cs",
-              "DocumentMoniker": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\PutModels\\AsiloPut.cs",
-              "RelativeDocumentMoniker": "AplicacionEstudiantes\\PutModels\\AsiloPut.cs",
-              "ToolTip": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\PutModels\\AsiloPut.cs",
-              "RelativeToolTip": "AplicacionEstudiantes\\PutModels\\AsiloPut.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T17:35:53.453Z"
             },
             {
               "$type": "Document",
@@ -64,7 +52,7 @@
               "RelativeDocumentMoniker": "AplicacionEstudiantes\\Controllers\\EstudiantesController.cs",
               "ToolTip": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\Controllers\\EstudiantesController.cs",
               "RelativeToolTip": "AplicacionEstudiantes\\Controllers\\EstudiantesController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowBgAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T17:23:05.583Z",
               "EditorCaption": ""
@@ -83,15 +71,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Estudiantes.cs",
               "DocumentMoniker": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\Mongo\\Models\\Estudiantes.cs",
               "RelativeDocumentMoniker": "AplicacionEstudiantes\\Mongo\\Models\\Estudiantes.cs",
               "ToolTip": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\Mongo\\Models\\Estudiantes.cs",
               "RelativeToolTip": "AplicacionEstudiantes\\Mongo\\Models\\Estudiantes.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA8AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T16:55:48.765Z"
+              "WhenOpened": "2025-07-09T16:55:48.765Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -107,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EstudiantesPost.cs",
               "DocumentMoniker": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\PostModels\\EstudiantesPost.cs",
               "RelativeDocumentMoniker": "AplicacionEstudiantes\\PostModels\\EstudiantesPost.cs",
@@ -128,6 +117,18 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-09T16:48:12.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AsiloPut.cs",
+              "DocumentMoniker": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\PutModels\\AsiloPut.cs",
+              "RelativeDocumentMoniker": "AplicacionEstudiantes\\PutModels\\AsiloPut.cs",
+              "ToolTip": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\PutModels\\AsiloPut.cs",
+              "RelativeToolTip": "AplicacionEstudiantes\\PutModels\\AsiloPut.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T17:35:53.453Z"
             }
           ]
         }

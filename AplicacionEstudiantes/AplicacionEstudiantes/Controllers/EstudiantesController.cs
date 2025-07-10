@@ -26,12 +26,13 @@ public class EstudiantesController : ControllerBase
     public ActionResult<Estudiante> GetPorId(string matricula)
     {
         var estudiante = _coleccion.Find(x => x.Matricula == matricula).FirstOrDefault();
-        return estudiante == null ? NotFound() : Ok(estudiante);
+        return estudiante == null ? NotFound($"No se encontró ningún estudiante con la matricula: '{matricula}'.") : Ok(estudiante);
     }
 
     [HttpPost]
     public ActionResult Crear([FromForm] EstudiantePost dto)
     {
+        
         var nuevo = new Estudiante
         {
             Matricula = dto.Matricula,
@@ -54,7 +55,7 @@ public class EstudiantesController : ControllerBase
         var resultado = _coleccion.DeleteOne(x => x.Matricula == matricula);
 
         if (resultado.DeletedCount == 0)
-            return NotFound($"No se encontró ningún estudiante con la matricula: '{matricula}'.");
+            return Ok(MessageResponse.GetReponse(0, $"No se encontró ningún estudiante con la matricula: '{matricula}'.", MessageType.Warning));
 
         return Ok(MessageResponse.GetReponse(0, $"Estudiante con la matricula: '{matricula}' eliminado exitosamente.", MessageType.Success));
     }
@@ -66,6 +67,7 @@ public class EstudiantesController : ControllerBase
         var filtro = Builders<Estudiante>.Filter.Eq(x => x.Matricula, matricula);
 
         var actualizacion = Builders<Estudiante>.Update
+            .Set(x => x.Nombre, dto.Nombre)
             .Set(x => x.Apellido, dto.Apellido)
             .Set(x => x.Edad, dto.Edad)
             .Set(x => x.Carrera, dto.Carrera)
@@ -74,7 +76,7 @@ public class EstudiantesController : ControllerBase
         var resultado = _coleccion.UpdateOne(filtro, actualizacion);
 
         if (resultado.MatchedCount == 0)
-            return NotFound($"No se encontró ningún estudiante con la matricula: '{matricula}'.");
+            return Ok(MessageResponse.GetReponse(0, $"No se encontró ningún estudiante con la matricula: '{matricula}'.", MessageType.Warning));
 
         return Ok(MessageResponse.GetReponse(0, $"Estudiante con la matricula: '{matricula}' actualizado exitosamente.", MessageType.Success));
     }
