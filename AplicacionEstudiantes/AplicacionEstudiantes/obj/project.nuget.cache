@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+euEv2AAIQk=",
+  "dgSpecHash": "SGxxyWYD3Ww=",
   "success": true,
-  "projectFilePath": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\AplicacionEstudiantes.csproj",
+  "projectFilePath": "C:\\Users\\elihu\\Downloads\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\AplicacionEstudiantes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elihu\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\elihu\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

@@ -1783,11 +1783,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\AplicacionEstudiantes.csproj",
+      "projectUniqueName": "C:\\Users\\elihu\\Downloads\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\AplicacionEstudiantes.csproj",
       "projectName": "AplicacionEstudiantes",
-      "projectPath": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\AplicacionEstudiantes.csproj",
+      "projectPath": "C:\\Users\\elihu\\Downloads\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\AplicacionEstudiantes.csproj",
       "packagesPath": "C:\\Users\\elihu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elihu\\Videos\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\obj\\",
+      "outputPath": "C:\\Users\\elihu\\Downloads\\Aplicacion-Estudiantes-Base-de-datos-\\AplicacionEstudiantes\\AplicacionEstudiantes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
