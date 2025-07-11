@@ -14,7 +14,6 @@ public class EstudiantesController : ControllerBase
         _coleccion = context.GetCollection<Estudiante>("estudiantes");
     }
 
-    // GET: api/estudiantes
     [HttpGet]
     public ActionResult<List<Estudiante>> GetTodos()
     {
@@ -32,7 +31,6 @@ public class EstudiantesController : ControllerBase
     [HttpPost]
     public ActionResult Crear([FromForm] EstudiantePost dto)
     {
-        
         var nuevo = new Estudiante
         {
             Matricula = dto.Matricula,
@@ -43,7 +41,14 @@ public class EstudiantesController : ControllerBase
             Cuatrimestre = dto.Cuatrimestre
         };
 
-        _coleccion.InsertOne(nuevo);
+        try
+        {
+            _coleccion.InsertOne(nuevo);
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, MessageResponse.GetReponse(999, $"No se pudo registrar el Estudiante", MessageType.CriticalError));
+        }
 
         return Ok(MessageResponse.GetReponse(0, "Estudiante registrado exitosamente.", MessageType.Success));
     }
@@ -62,7 +67,7 @@ public class EstudiantesController : ControllerBase
 
 
     [HttpPut("{matricula}")]
-    public ActionResult ActualizarPorNombre(string matricula, [FromForm] EstudiantePost dto)
+    public ActionResult ActualizarPorNombre(string matricula, [FromForm] EstudiantePut dto)
     {
         var filtro = Builders<Estudiante>.Filter.Eq(x => x.Matricula, matricula);
 

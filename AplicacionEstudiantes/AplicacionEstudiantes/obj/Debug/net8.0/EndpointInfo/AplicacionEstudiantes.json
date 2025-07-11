@@ -181,9 +181,6 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "Matricula": {
-                    "type": "string"
-                  },
                   "Nombre": {
                     "type": "string"
                   },
@@ -203,9 +200,6 @@
                 }
               },
               "encoding": {
-                "Matricula": {
-                  "style": "form"
-                },
                 "Nombre": {
                   "style": "form"
                 },

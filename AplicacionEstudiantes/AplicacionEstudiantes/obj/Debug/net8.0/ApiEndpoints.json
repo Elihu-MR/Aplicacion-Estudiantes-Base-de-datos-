@@ -116,11 +116,6 @@
         "IsRequired": true
       },
       {
-        "Name": "Matricula",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
         "Name": "Nombre",
         "Type": "System.String",
         "IsRequired": false
